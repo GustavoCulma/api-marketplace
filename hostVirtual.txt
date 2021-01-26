@@ -1,0 +1,20 @@
+se debe agregar estas lineas en esta ruta
+-----------------------------
+C:\xampp\apache\conf\extra
+-----------------------------
+
+ <VirtualHost *:80>
+  DocumentRoot "C:\xampp\htdocs"
+  ServerName localhost
+ </VirtualHost>
+
+ <VirtualHost *:80>
+  DocumentRoot "C:\xampp\htdocs\api-marketplace"
+  ServerName gustavo
+ </VirtualHost>
+---------------------------------
+y en el host también 
+---------------------------------
+C:\Windows\System32\drivers\etc
+----------------------------------
+127.0.0.1	gustavo
