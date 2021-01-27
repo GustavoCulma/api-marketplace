@@ -21,7 +21,7 @@ if (count($routesArray)==1 &&
 
 	$response = new GetContoller();
 	$response->getData($routesArray[1]);
-
+	
 }
 /*=============================================
 = Cuando se hace una peticion POST            =
