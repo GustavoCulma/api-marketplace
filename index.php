@@ -1,12 +1,10 @@
 <?php 
 
-$json = array(
-	'status' =>200 ,
-	'result' => "succes"
-	  );
+require_once"controllers/route.controller.php";
 
-echo json_encode($json);
-
+$index = new RouteController();
+$index->index();
 return;
 
-?>
+
+ ?>
