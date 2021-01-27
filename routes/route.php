@@ -18,13 +18,9 @@ if (count($routesArray)==0) {
 if (count($routesArray)==1 &&
 	isset($_SERVER["REQUEST_METHOD"])&&
 	$_SERVER["REQUEST_METHOD"]=="GET"){
-	$json=array(
-		'status' =>200,
-		'result' =>"GET"
-	);
 
-echo json_encode($json,http_response_code("$json[status]"));
-return;
+	$response = new GetContoller();
+	$response->getData($routesArray[1]);
 
 }
 /*=============================================

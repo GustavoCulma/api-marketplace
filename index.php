@@ -5,9 +5,9 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 header('content-type: application/json; charset=utf-8');
 
-require_once"controllers/route.controller.php";
-$index = new RouteController();
+
+require_once "controllers/route.controller.php";
+require_once "controllers/get.controller.php";
+$index =new RoutesController();
 $index->index();
-
-
  ?>
